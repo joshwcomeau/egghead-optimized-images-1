@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Image demo</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .cat-photo {
+        height: 100vh;
+      }
+      .me {
+        position: fixed;
+        bottom: 40px;
+        left: 40px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <picture>
+      <source srcset="cat.webp" type="image/webp" />
+      <img src="cat.jpg" class="cat-photo" alt="A cat hunting a toy bird" />
+    </picture>
+    <picture>
+      <source srcset="me.webp" type="image/webp" />
+      <img src="me.png" class="me" alt="3D Josh" />
+    </picture>
+  </body>
+</html>
